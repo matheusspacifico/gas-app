@@ -6,6 +6,7 @@ export default function Index() {
     <SafeAreaView style = {styles.SafeAreaView}>
       <View style = {styles.View}>
         <Text>Rap de Baiano.</Text>
+        <Text>Rap de Baiano.</Text>
       </View>
     </SafeAreaView>  
   );
