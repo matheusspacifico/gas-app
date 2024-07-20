@@ -4,9 +4,15 @@ export default function RootLayout() {
   return (
     <Stack
       screenOptions={{
-      headerShown: false,
+      headerShown: true,
     }}>
-      <Stack.Screen name="index" />
+      <Stack.Screen name="index" options={{
+        headerTitle: "Calculadora de Combustível",
+        headerTitleAlign: "center",
+        headerTitleStyle: {
+          fontWeight: "bold",
+        },
+      }}/>
     </Stack>
   );
 }
