@@ -4,12 +4,9 @@ import { Text, View, SafeAreaView, StyleSheet} from "react-native";
 export default function Index() {
   return (
     <SafeAreaView style = {styles.SafeAreaView}>
-      <View
-        style={{
-          flex: 1,
-          justifyContent: "center",
-          alignItems: "center",}
-        }>
+
+      <View style = {styles.View}>
+        <Text>Rap de Baiano.</Text>
         <Text>Rap de Baiano.</Text>
       </View>
     </SafeAreaView>  
@@ -17,8 +14,18 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  SafeAreaView: {
+
+  SafeAreaView:{
     flex: 1,
   },
 
+  View:{
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  } 
+=======
+  SafeAreaView: {
+    flex: 1,
+  },
 });
