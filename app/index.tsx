@@ -1,22 +1,24 @@
-import { 
-  Text, 
-  View,
-  SafeAreaView
-} from "react-native";
+import { Text, View, SafeAreaView, StyleSheet} from "react-native";
 
 
 export default function Index() {
   return (
-    <SafeAreaView>
-      <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-      >
+    <SafeAreaView style = {styles.SafeAreaView}>
+      <View style = {styles.View}>
         <Text>Rap de Baiano.</Text>
       </View>
-    </SafeAreaView>
+    </SafeAreaView>  
   );
 }
+
+const styles = StyleSheet.create({
+  SafeAreaView:{
+    flex: 1,
+  },
+
+  View:{
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  } 
+});
