@@ -1,25 +1,36 @@
-import { Text, View, SafeAreaView, StyleSheet} from "react-native";
-
+import { Text, View, SafeAreaView, StyleSheet } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Index() {
   return (
-    <SafeAreaView style = {styles.SafeAreaView}>
-      <View style = {styles.View}>
-        <Text>Rap de Baiano.</Text>
+    <SafeAreaView style={styles.SafeAreaView}>
+      <View style={styles.NovoCarro}>
+        <Ionicons name="add-circle-sharp" size={50} color={"black"} style={styles.NovoCarroIcon}/>
+        <Text style={styles.NovoCarroText}>NOVO CARRO</Text>
       </View>
-    </SafeAreaView>  
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-
-  SafeAreaView:{
+  SafeAreaView: {
     flex: 1,
   },
 
-  View:{
-    flex: 1,
-    justifyContent: "center",
+  NovoCarro: {
+    flexDirection: "row",
     alignItems: "center",
-  } 
+    padding: 40,
+    backgroundColor: "#E5E7EB",
+  },
+
+  NovoCarroIcon: {
+    flex: 1,
+  },
+
+  NovoCarroText: {
+    flex: 2,
+    fontSize: 25,
+    fontWeight: "bold",
+  },
 });
