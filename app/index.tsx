@@ -1,5 +1,6 @@
 import { Text, View, SafeAreaView, StyleSheet, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import CalcularDireto from "@/components/calcularDireto";
 
 export default function Index() {
   return (
@@ -10,10 +11,8 @@ export default function Index() {
         <Text style={styles.NovoCarroText}>NOVO CARRO</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.CalcularDireto} onPress={() => console.log("calcular direto")}>
-        <Text style={styles.CalcularDiretoText}>Calcular Direto</Text>
-      </TouchableOpacity>
-
+      
+    <CalcularDireto></CalcularDireto>
 
     </SafeAreaView>
   );
@@ -40,32 +39,4 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "bold",
   },
-
-  CalcularDireto: {
-    position: 'absolute',
-    bottom: 20,
-    left: 0,
-    right: 0,
-    marginLeft: 20,
-    marginRight: 20,
-    alignSelf: 'center',
-    alignItems: 'center',
-    backgroundColor: "#E5E7EB",
-    padding: 20,
-    borderRadius: 5,
-
-    // SOMBRA PRO IOS
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    // SOMBRA PRO IOS
-
-    elevation: 5, // SOMBRA PRO ANDROID
-  },
-
-  CalcularDiretoText: {
-    fontSize: 20,
-    fontWeight: "bold",
-  }
 });
