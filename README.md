@@ -19,5 +19,5 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 ## Credits:
 
-   Matheus Sabatini Pacífico
+   Matheus Sabatini Pacífico  
    Pedro Henrique Spinola Morilha Neo
