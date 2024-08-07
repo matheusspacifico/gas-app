@@ -3,7 +3,7 @@ import {Text, View, SafeAreaView, StyleSheet, TouchableOpacity} from 'react-nati
 
 const CalcularDireto = () => {
     return(
-        <TouchableOpacity style={styles.CalcularDireto} onPress={() => console.log("calcular direto")}>
+        <TouchableOpacity style={styles.CalcularDireto}>
             <Text style={styles.CalcularDiretoText}>Calcular Direto</Text>
         </TouchableOpacity>
     );

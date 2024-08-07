@@ -1,11 +1,14 @@
 import { Text, View, SafeAreaView, StyleSheet, TouchableOpacity } from "react-native";
 import CalcularDireto from "@/components/calcularDireto";
-import NovoCarro from "@/components/NovoCarro"
+import NovoCarro from "@/components/novoCarro";
+import { Link } from 'expo-router';
 
 export default function Index() {
   return (
     <SafeAreaView style={styles.SafeAreaView}>
-      <NovoCarro></NovoCarro>
+      <Link href="/novoCarroScreen">
+        <NovoCarro></NovoCarro>
+      </Link>
       <CalcularDireto></CalcularDireto>  
     </SafeAreaView>
   );
@@ -14,5 +17,6 @@ export default function Index() {
 const styles = StyleSheet.create({
   SafeAreaView: {
     flex: 1,
+    alignItems: "center",
   },
 });

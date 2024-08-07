@@ -7,7 +7,14 @@ export default function RootLayout() {
       headerShown: true,
     }}>
       <Stack.Screen name="index" options={{
-        headerTitle: "Calculadora de Combustível",
+        headerTitle: "Home",
+        headerTitleAlign: "center",
+        headerTitleStyle: {
+          fontWeight: "bold",
+        },
+      }}/>
+      <Stack.Screen name="novoCarroScreen" options={{
+        headerTitle: "Novo Carro",
         headerTitleAlign: "center",
         headerTitleStyle: {
           fontWeight: "bold",
